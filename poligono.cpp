@@ -121,8 +121,8 @@ void Poligono::rotaciona(float x_origem, float y_origem, float o)
             p=vertices[i].sub(origem);
             ang=atan2(p.getY(), p.getX()); //atan2 descobre o anguo em qualquer quadrante, atan não
             ang+=o;
-            vertices[i].setX(p.norma()*cos(ang));
-            vertices[i].setY(p.norma()*sin(ang));
+            vertices[i].setX(p.norma()*cos(ang) + x_origem);
+            vertices[i].setY(p.norma()*sin(ang) + y_origem);
 
         }
     }
