@@ -84,8 +84,7 @@ int main()
             case 1:
             {
                 float graus=0;
-                if(polig.nVertices()>2)
-                {
+                
                     cout << "Digite o ponto por onde o poligono deve rotacionar: ";
                     cin >> x >> y;
                     cout << "Digite quantos graus o poligono deve rotacionar: ";
@@ -99,17 +98,12 @@ int main()
                     {
                         polig.rotaciona(x, y, graus);
                     }
-                }
-                else
-                {
-                    cout << "POLIGONO NAO DEFINIDO! CRIE UM ANTES DE RALIZAR ESTA OPERACAO!" << endl << endl;
-                }
+               
                 break;
             }
             case 2:
             {
-                if(polig.nVertices()>2)
-                {
+                
                     cout << "Digite o quanto deseja transladar o poligono na horizontal e vertical: ";
                     cin >> x >> y;
 
@@ -121,17 +115,12 @@ int main()
                     {
                         polig.translada(x, y);
                     }                    
-                }
-                else
-                {
-                    cout << "POLIGONO NAO DEFINIDO! CRIE UM ANTES DE RALIZAR ESTA OPERACAO!" << endl << endl;
-                }
+               
                 break;
             }
             case 3:
             {
-                if(polig.nVertices()>2)
-                {
+               
                     if(eRet) //testa se eh retangulo ou não
                     {
                         cout << "O numero de vertices do retangulo e: " << ret.nVertices() << endl;
@@ -140,17 +129,12 @@ int main()
                     {
                         cout << "O numero de vertices do poligono e: " << polig.nVertices() << endl;
                     }
-                }
-                else
-                {
-                    cout << "POLIGONO NAO DEFINIDO! CRIE UM ANTES DE RALIZAR ESTA OPERACAO!" << endl << endl;
-                }
+               
                 break;
             }
             case 4:
             {
-                if(polig.nVertices()>2)
-                {
+                
                     if(eRet) //testa se eh retangulo ou não
                     {
                         cout << "A area do retangulo e: " << ret.areaPoligono() << endl;
@@ -159,11 +143,7 @@ int main()
                     {
                         cout << "A area do poligono e: " << polig.areaPoligono() << endl;
                     }                    
-                }
-                else
-                {
-                    cout << "POLIGONO NAO DEFINIDO! CRIE UM ANTES DE RALIZAR ESTA OPERACAO!" << endl << endl;
-                }
+              
                 break;
             }
             case 5:
