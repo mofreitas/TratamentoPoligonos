@@ -1,34 +1,41 @@
 #ifndef PONTO_H
 #define PONTO_H
 
+/** @brief A classe Ponto serve para a declaração e manipulação de Pontos no plano cartesiano
+* bem como para a obtenção de algumas de suas informações
+*
+* A classe Ponto providencia a declaração, obtenção e exibição das coordenadas x e y de cada ponto. Também permite
+* fazer adição e subtração com outros pontos, deslocá-los e obter a distância entre o ponto e a origem do eixo de
+* coordenadas
+*/
 class Ponto
 {
 private:
     float x;
     float y;
 public:
-    /** @brief Construtor da classe Ponto
+    /** @brief Construtor padrão da classe Ponto
     */
     Ponto();
-    /** @brief Atribui valores a coordenada x do Ponto
+    /** @brief setX Atribui valores a coordenada x do Ponto
     *   @param x1 Valor que será atribuido a coordenada x do Ponto
     */
     void setX(float x1);
-    /** @brief Atribui valores a coordenada y do Ponto
+    /** @brief setY Atribui valores a coordenada y do Ponto
     *   @param y1 Valor que será atribuido a coordenada y do Ponto
     */
     void setY(float y1);
-    /** @brief Atribui valores às coordenadas x e y da classe Ponto simultaneamente
+    /** @brief setXY Atribui valores às coordenadas x e y da classe Ponto simultaneamente
     *   @param x1 Valor que será atribuido a coordenada x do Ponto
     *   @param y1 Valor que será atribuido a coordenada y do Ponto
     */
     void setXY(float x1, float y1);
-    /** @brief Recepera o valor de x da classe Ponto
-    *   @return A coordenada x do ponto
+    /** @brief getX recupera o valor de x da classe Ponto
+    *   @return Coordenada x do ponto
     */ 
     float getX(void);
-    /** @brief Recepera o valor de y da classe Ponto
-    *   @return A coordenada y do ponto
+    /** @brief Recupera o valor de y da classe Ponto
+    *   @return Coordenada y do ponto
     */    
     float getY(void);
     /** @brief Executa a adição de pontos

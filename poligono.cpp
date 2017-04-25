@@ -44,10 +44,8 @@ bool Poligono::verifPoligono()
             }
         }
 
-        //Diferença de angulo entre dois vetores
-        //http://stackoverflow.com/questions/21483999/using-atan2-to-find-angle-between-two-vectors
+        //Diferença de angulo entre dois vetore: /http://stackoverflow.com/questions/21483999/using-atan2-to-find-angle-between-two-vectors
         x=atan2(u.getY(), u.getX()) - atan2(t.getY(), t.getX());
-
 
         //transformando angulos para o intervalo de 0 a 2pi
         if(x < 0)
@@ -55,7 +53,6 @@ bool Poligono::verifPoligono()
             x += 2*M_PI;
         }
 
-        //teste- --cout << 180*x/M_PI   << ", "<< i <<endl;
         //Se o angulo interno for maior que 180 graus
         if(x-M_PI>0.001)
         {
@@ -108,22 +105,21 @@ void Poligono::translada(float a, float b)
 }
 
 //rotaciona em torno de um vertice
-void Poligono::rotaciona(float x_origem, float y_origem, float o)
+void Poligono::rotaciona(float x_origem, float y_origem, float theta)
 {
     float ang;
     Ponto origem, p;
     origem.setXY(x_origem, y_origem);
-    o*=(M_PI/180);   //trasformando o angulo de graus p/ rad
+    theta*=(M_PI/180);   //trasformando o angulo de graus p/ rad
     for(int i=0;i<n;i++)
     {
         if(vertices[i].getX()!=x_origem||vertices[i].getY()!=y_origem)
         {
             p=vertices[i].sub(origem);
-            ang=atan2(p.getY(), p.getX()); //atan2 descobre o anguo em qualquer quadrante, atan não
-            ang+=o;
+            ang=atan2(p.getY(), p.getX()); //atan2 descobre o angulo em qualquer quadrante, atan não
+            ang+=theta;
             vertices[i].setX(p.norma()*cos(ang) + x_origem);
             vertices[i].setY(p.norma()*sin(ang) + y_origem);
-
         }
     }
 }
@@ -132,7 +128,8 @@ void Poligono::imprime()
 {
     for(int i =0;i<n;i++)
     {
-        cout << "(" << vertices[i].getX() << "," << vertices[i].getY() << ")->";
+        vertices[i].imprime();
+        cout << "->";
     }
     cout << endl << endl;
 }

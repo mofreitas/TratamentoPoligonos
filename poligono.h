@@ -1,18 +1,24 @@
 #ifndef POLIGONO_H
 #define POLIGONO_H
 #include "ponto.h"
+#define TAM 100
 
-/** @brief A classe Poligono serve para a declaração de polígonos e a obtenção de suas informações 
+/** @brief A classe Poligono serve para a declaração e manipulação de polígonos, bem como para a obtenção de suas informações
 * 
+* A classe Polígono providencia o armazenamento de até 100 pontos para a declaração de polígonos. Ela possibilita adicionar seus vértices,
+* verificar se formam um polígono convexo e exibi-los. Também, há métodos para a obtenção da área, número de vértices do polígono e para
+* manipulá-los por proporcionar uma função para sua rotação e translação.  
 */
 class Poligono
 {
 protected:
-    Ponto vertices[100];
+    Ponto vertices[TAM];
     int n=0;
 public:
+    /** @brief Poligono é o construtor padrão da classe Polígono
+    */
     Poligono();
-    /** @brief adcVertice adiciona um vertice ao polígono
+    /** @brief adcVertice adiciona um vértice ao polígono
     * @param x recebe a coordenada x do vértice a ser adicionado
     * @param y recebe a coordenada y do vértice a ser adicionado
     */
@@ -21,24 +27,24 @@ public:
     */
     bool verifPoligono(void);
     /** @brief nVertices recupera o número de vértices do polígono
-    *   @return número de vértices do polígono
+    *   @return Número de vértices do polígono
     */
     int nVertices(void);
     /** @brief areaPoligono calcula a área do polígono
-    *   @return área do polígono
+    *   @return Área do polígono
     */
     float areaPoligono(void);
     /** @brief translada move o polígono
-    *   @param a recebe 
-    *   @param b recebe  
+    *   @param a recebe a distância que o poligono irá se mover em relação ao eixo x
+    *   @param b recebe a distância que o poligono irá se mover em relação ao eixo y
     */
     void translada(float a, float b);
-    /** @brief rotaciona servepara rotacionar o polígono em torno de um ponto
-    *   @param x_origem recebe a coordenada x do ponto por onde o polígono vai rotacionar
-    *   @param y_origem recebe a coordenada y do ponto por onde o polígono vai rotacionar 
-    *   @param o recebe o ângulo em graus que o polígono irá rotacionar
+    /** @brief rotaciona serve para rotacionar o polígono em torno de um ponto
+    *   @param x_origem recebe a coordenada x do eixo de rotação do polígono
+    *   @param y_origem recebe a coordenada y do eixo de rotação do polígono
+    *   @param theta recebe o ângulo em graus que o polígono irá rotacionar
     */
-    void rotaciona(float x_origem, float y_origem, float o);
+    void rotaciona(float x_origem, float y_origem, float theta);
     /** @brief imprime serve para exibir os pontos que formam os vértices do polígono
     */
     void imprime(void);

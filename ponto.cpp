@@ -27,7 +27,7 @@ Ponto Ponto::sub(Ponto p1)
 
 void Ponto::imprime(void)
 {
-    cout << "(" << x << ", " << y << ")" << endl;
+    cout << "(" << x << ", " << y << ")";
 }
 
 float Ponto::getX(void)
