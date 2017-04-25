@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['nvertices',['nVertices',['../class_poligono.html#ad2ba7ab5384c7bcc097f4c810c049a1f',1,'Poligono']]]
+  ['imprime',['imprime',['../class_poligono.html#a9e4ab006eceed5bc68d3175127a200e0',1,'Poligono::imprime()'],['../class_ponto.html#a527d46ce0fc24f112ead68980e52c2ca',1,'Ponto::imprime()']]]
 ];

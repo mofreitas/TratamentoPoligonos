@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['tratamentopoligonos',['TratamentoPoligonos',['../md__r_e_a_d_m_e.html',1,'']]],
-  ['translada',['translada',['../class_poligono.html#adbf605dfd0419b7301c9be0ec1dbe41b',1,'Poligono']]]
+  ['resetpoligono',['resetPoligono',['../class_poligono.html#ae74c1990e2ef7b4fb7a53d62584d842e',1,'Poligono']]],
+  ['retangulo',['Retangulo',['../class_retangulo.html',1,'']]],
+  ['rotaciona',['rotaciona',['../class_poligono.html#a2e710125b28ff3faa74c89aba793cffb',1,'Poligono']]]
 ];

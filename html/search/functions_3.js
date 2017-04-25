@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['resetpoligono',['resetPoligono',['../class_poligono.html#ae74c1990e2ef7b4fb7a53d62584d842e',1,'Poligono']]],
-  ['rotaciona',['rotaciona',['../class_poligono.html#a2e710125b28ff3faa74c89aba793cffb',1,'Poligono']]]
+  ['norma',['norma',['../class_ponto.html#acf5167ec08bdd5fbf71bc6a4f1438edc',1,'Ponto']]],
+  ['nvertices',['nVertices',['../class_poligono.html#ad2ba7ab5384c7bcc097f4c810c049a1f',1,'Poligono']]]
 ];
