@@ -2,13 +2,13 @@
 #define RETANGULO_H
 #include "poligono.h"
 
-/** @brief A classe Retangulo serve para fazer a declaração de retângulos
+/** @brief A classe Retangulo serve para a declaração de retângulos
 */
 class Retangulo : public Poligono
 {
 public:
     /** @brief Construtor padrão da classe Retangulo
-    */ 
+    */
     Retangulo();
     /** @brief Construtor com argumentos da classe Retangulo
     * @param x coordenada x do ponto superior esquerdo do retângulo a ser declarado
