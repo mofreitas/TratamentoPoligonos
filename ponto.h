@@ -18,16 +18,16 @@ public:
     */
     Ponto();
     /** @brief Atribui valores à coordenada x do ponto
-    *   @param x1 Valor que será atribuído à coordenada x do ponto
+    *   @param x1 valor que será atribuído à coordenada x do ponto
     */
     void setX(float x1);
     /** @brief Atribui valores à coordenada y do ponto
-    *   @param y1 Valor que será atribuído à coordenada y do ponto
+    *   @param y1 valor que será atribuído à coordenada y do ponto
     */
     void setY(float y1);
     /** @brief Atribui valores às coordenadas x e y do ponto simultaneamente
-    *   @param x1 Valor que será atribuído à coordenada x do ponto
-    *   @param y1 Valor que será atribuído à coordenada y do ponto
+    *   @param x1 valor que será atribuído à coordenada x do ponto
+    *   @param y1 valor que será atribuído à coordenada y do ponto
     */
     void setXY(float x1, float y1);
     /** @brief Recupera o valor da coordenada x do ponto
@@ -39,12 +39,12 @@ public:
     */
     float getY(void);
     /** @brief Executa a adição das coordenadas de dois pontos
-    *   @param p1 Ponto contendo as coordenadas que irão somar-se aos estados da classe
+    *   @param p1 ponto contendo as coordenadas que irão somar-se aos estados da classe
     *   @return Ponto resultante da adição
     */
     Ponto soma(Ponto p1);
     /** @brief Executa a subtração de pontos
-    *   @param p1 Ponto contendo as coordenadas que irão subtrair-se aos estados da classe
+    *   @param p1 ponto contendo as coordenadas que irão subtrair-se aos estados da classe
     *   @return Ponto resultante da subtração
     */
     Ponto sub(Ponto p1);
@@ -53,8 +53,8 @@ public:
     */
     float norma(void);
     /** @brief Desloca o ponto para uma nova posição no plano cartesiano
-        @param a Valor que será somado à coordenada x do ponto
-        @param b Valor que será somado à coordenada y do ponto
+        @param a valor que será somado à coordenada x do ponto
+        @param b valor que será somado à coordenada y do ponto
     */
     void translada(float a, float b);
     /** @brief Exibe as coordenadas x e y do ponto no formato <i>(x, y)</i>
