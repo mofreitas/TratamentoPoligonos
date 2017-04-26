@@ -13,7 +13,6 @@ Retangulo::Retangulo (float x, float y, float largura, float altura)
     adcVertice(x, y);
 }
 
-
 void Retangulo::operator()(float x, float y, float largura, float altura)
 {    
     adcVertice(x, y-altura);
