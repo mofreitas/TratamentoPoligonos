@@ -68,4 +68,3 @@ void Ponto::translada(float a, float b)
     x+=a;
     y+=b;
 }
-
