@@ -126,10 +126,11 @@ void Poligono::rotaciona(float x_origem, float y_origem, float theta)
 
 void Poligono::imprime()
 {
-    for(int i =0;i<n;i++)
+    for(int i=0;i<n;i++)
     {
         vertices[i].imprime();
-        cout << "->";
+        if(i!=n-1)
+            cout << " -> ";
     }
     cout << endl << endl;
 }
@@ -138,5 +139,3 @@ void Poligono::resetPoligono()
 {
     n=0;
 }
-
-
